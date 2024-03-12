@@ -1,5 +1,6 @@
 <script>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import bgPic from '/images/test.png';
 export default{
     components:{
         AuthenticatedLayout,
@@ -11,6 +12,7 @@ export default{
     },
     data(){
         return{
+            bgPic:bgPic,
             
 
         }
@@ -19,6 +21,7 @@ export default{
 </script>
 <template>
     <AuthenticatedLayout>
+        <img :src="bgPic" alt="">
 
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
